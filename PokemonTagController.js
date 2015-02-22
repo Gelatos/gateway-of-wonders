@@ -29,13 +29,11 @@ pokemonTopicIDs.push("2966"); // chapter 4
     
     // initialize variables
     var postText = document.getElementsByClassName('postcolor');
-    var incrementer = -1;
     var randomIncrementer = 0;
     var previousIncrementerNumber = 0;
     var battleBGIDs = [];
     
-    while (incrementer < postText.length) {
-        incrementer++;
+    for (var incrementer = 0; incrementer < postText; incrementer++) {
         
         // ================================================================================
         // FACE SET
@@ -570,9 +568,8 @@ pokemonTopicIDs.push("2966"); // chapter 4
 // --------------------------------------------------------------------------------
 // ================================================================================
     postText = document.getElementsByClassName('signature');
-    incrementer = -1;
 
-    while (incrementer < postText.length) {
+    for (var incrementer = 0; incrementer < postText; incrementer++) {
         // ================================================================================
         // CREATE POKEMON TRAINER SINGLE LOGS
         // ================================================================================
