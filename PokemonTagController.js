@@ -40,8 +40,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // FACE SET
         // ================================================================================
-        if (typeof postText[incrementer] != 'undefined' && 
-            postText[incrementer].innerHTML.indexOf('[e') !== -1) {
+        if (postText[incrementer].innerHTML.indexOf('[e') !== -1) {
             // Find the string that is within either the pokemon tags.
             postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
                 /\[(emote|e)(?:=(.+?))?\]([\s\S]+?)\[\/(emote|e)\]/gi, function (total, t, title, inner) {
@@ -66,7 +65,6 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // Display pokemon
         // ================================================================================
         if (pokemonTopic &&
-            typeof postText[incrementer] != 'undefined' && 
             postText[incrementer].innerHTML.indexOf('[pk') !== -1) {
             // Find the string that is within either the pokemon tags.
             postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
@@ -104,10 +102,8 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         for (var i = 0; i < pokemonStatDictionary.length; i++) {
                 if (pokemonTopic &&
-                    typeof postText[incrementer] != 'undefined' && 
                     postText[incrementer].innerHTML.indexOf(pokemonStatDictionary[i][1]) !== -1) {
-                    
-                    postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
+                postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
                     new RegExp('(^|\\s|\\(|\\-|\\]\\)|\\r|\\t|\\<br\\>)' + pokemonStatDictionary[i][1].toLowerCase(), "gi"),
                     function (inner) {
                         var output = "";
@@ -127,7 +123,6 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // CREATE POKEMON ADVENTURE LOGS
         // ================================================================================
         if (pokemonTopic &&
-            typeof postText[incrementer] != 'undefined' && 
             postText[incrementer].innerHTML.indexOf("[trainerLog") !== -1) {
 
             // Find the string that is within either the pokemonFormatter tags.
@@ -193,9 +188,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // CREATE POKEMON TRAINER SINGLE LOGS
         // ================================================================================
-        if (typeof postText[incrementer] != 'undefined' && 
-            typeof postText[incrementer] != 'undefined' && 
-            postText[incrementer].innerHTML.indexOf("[trainer") !== -1) {
+        if (postText[incrementer].innerHTML.indexOf("[trainer") !== -1) {
 
             // Find the string that is within either the pokemonFormatter tags.
             postText[incrementer].innerHTML = 
@@ -246,8 +239,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // Show All Facesets
         // ================================================================================
-        if (typeof postText[incrementer] != 'undefined' && 
-            postText[incrementer].innerHTML.indexOf('[showAll') !== -1) {
+        if (postText[incrementer].innerHTML.indexOf('[showAll') !== -1) {
             // Find the string that is within either the pokemon tags.
             postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
                 /\[showAll(?:=(.+?))?\]/gi, function (total, title) {
@@ -270,8 +262,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // Show Everything Faceset
         // ================================================================================
-        if (typeof postText[incrementer] != 'undefined' && 
-            postText[incrementer].innerHTML.indexOf('[showEverything') !== -1) {
+        if (postText[incrementer].innerHTML.indexOf('[showEverything') !== -1) {
             // Find the string that is within either the pokemon tags.
             postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
                 /\[showEverything(?:=(.+?))?\]/gi, function (total, title) {
@@ -295,8 +286,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // Versus Battle Image
         // ================================================================================
-        if (typeof postText[incrementer] != 'undefined' && 
-            postText[incrementer].innerHTML.indexOf('[battleEmote') !== -1) {
+        if (postText[incrementer].innerHTML.indexOf('[battleEmote') !== -1) {
             // Find the string that is within either the pokemon tags.
             var innerText = [];
             var innerID = [];
@@ -360,8 +350,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // SLOTS FORMULA
         // ================================================================================
-        if (typeof postText[incrementer] != 'undefined' && 
-            postText[incrementer].innerHTML.indexOf('[slots') !== -1) {
+        if (postText[incrementer].innerHTML.indexOf('[slots') !== -1) {
             // Find the string that is within either the pokemon tags.
             postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
                 /\[slots(?:=(.+?))?\]([\s\S]+?)\[\/slots\]/gi, function (total, multiplier, value) {
@@ -474,8 +463,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // REPLACE DIE FORMULA
         // ================================================================================
-        if (typeof postText[incrementer] != 'undefined' && 
-            postText[incrementer].innerHTML.indexOf('[d') !== -1) {
+        if (postText[incrementer].innerHTML.indexOf('[d') !== -1) {
             // Find the string that is within either the pokemon tags.
             postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
                 /\[d(?:=(.+?))?\]([\s\S]+?)\[\/d\]/gi, function (total, title, inner) {
@@ -541,8 +529,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // GET DAMAGE FORMULA
         // ================================================================================
-        if (typeof postText[incrementer] != 'undefined' && 
-            postText[incrementer].innerHTML.indexOf('[z') !== -1) {
+        if (postText[incrementer].innerHTML.indexOf('[z') !== -1) {
             // Find the string that is within either the pokemon tags.
             postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
                 /\[z(?:=(.+?))?\]/gi, function (total, data) {
@@ -589,8 +576,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // CREATE POKEMON TRAINER SINGLE LOGS
         // ================================================================================
-        if (typeof postText[incrementer] != 'undefined' && 
-            postText[incrementer].innerHTML.indexOf("[trainer") !== -1) {
+        if (postText[incrementer].innerHTML.indexOf("[trainer") !== -1) {
 
             // Find the string that is within either the pokemonFormatter tags.
             postText[incrementer].innerHTML = 
