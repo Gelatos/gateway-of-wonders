@@ -52,287 +52,297 @@ TrainerList[currentTrainer].items.push (item);
 // ========================================================
 
 // -----------------------------------------------------------------------------
-//
-//                                 PkmnName
+// 
+//                                 CHAR (Charmeleon)
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
 
 // pokemon intrinsic stats
-pkmn.nickname = "";
-pkmn.species = "";
-pkmn.speciesNumber = "";
+pkmn.nickname = "Char";
+pkmn.species = "Charmeleon";
+pkmn.speciesNumber = "4";
 pkmn.gender = "Male";
-pkmn.image = "";
+pkmn.image = "http://cdn.bulbagarden.net/upload/0/09/Spr_4d_005.png";
 
 // pokemon daily stats
 pkmn.party = true;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Blaze";
+pkmn.abilityDesc = "When a Pokémon with Blaze uses a Fire-type move, the power will increase by 1.5x if the user has less than or equal to ⅓ of its maximum HP remaining.";
 
 // notes
-pkmn.notes = "";
+pkmn.notes = "Char is Doodle‘s first Pokémon, given to him by Grey during the Escape From Exodeus.  He‘s a sarcastic grump filled with attitude and clever quips.  He seems to be hiding some sort of dark secret from his group of fellow captured fighters, but it doesn‘t bother him much.  He makes it obvious that he defies Doodle‘s rule over him and denies his authority as master.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
 
+
 // -----------------------------------------------------------------------------
-//
-//                                 PkmnName
+// 
+//                                 MIGHTY (Mightyena)
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
 
 // pokemon intrinsic stats
-pkmn.nickname = "";
-pkmn.species = "";
-pkmn.speciesNumber = "";
+pkmn.nickname = "Mighty";
+pkmn.species = "Mightyena";
+pkmn.speciesNumber = "261";
 pkmn.gender = "Male";
-pkmn.image = "";
+pkmn.image = "http://cdn.bulbagarden.net/upload/5/5b/Spr_4d_262.png";
 
 // pokemon daily stats
 pkmn.party = true;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Quick Feet";
+pkmn.abilityDesc = "Speed is increased by 50% when induced with a status (Burn, Poison, Sleep, Frozen & Paralysis). If Paralysed, the speed drop is ignored.";
 
 // notes
-pkmn.notes = "";
+pkmn.notes = "Mighty is Doodle‘s first caught Pokémon, burned to exhaustion by Char.  Despite his apparent age, Mighty has not lost his visible strength, and instead has gained much wisdom ready to spread to his fellow captives of the Pokeballs.  Even if there‘s no wind, his fur will move about dramatically.  He‘s very interested in Doodle and all humans.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
 
+
 // -----------------------------------------------------------------------------
-//
-//                                 PkmnName
+// 
+//                                 CRAGGLY (Corphish)
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
 
 // pokemon intrinsic stats
-pkmn.nickname = "";
-pkmn.species = "";
-pkmn.speciesNumber = "";
+pkmn.nickname = "Craggly";
+pkmn.species = "Corphish";
+pkmn.speciesNumber = "340";
 pkmn.gender = "Male";
-pkmn.image = "";
+pkmn.image = "http://cdn.bulbagarden.net/upload/6/6f/Spr_4d_341.png";
 
 // pokemon daily stats
 pkmn.party = true;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Hyper Cutter";
+pkmn.abilityDesc = "Opponent cannot lower this Pokémon’s Attack value. This Pokémon may still lower its own Attack value using a move of by itself.";
 
 // notes
-pkmn.notes = "";
+pkmn.notes = "Craggly is Doodle‘s third caught Pokémon, the prize of a fishing contest with Alexis.  Craggly is a very shy, very timid crustacean that hides behind his huge claws at small unexpected noises, and fusses over cleanliness and sanitation.  He doesn‘t miss being in the ocean, now being away from the mounds of sand that could hide anything.  He‘s deathly afraid of Doodle.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
 
+
 // -----------------------------------------------------------------------------
-//
-//                                 PkmnName
+// 
+//                                 ARBY (Arbok)
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
 
 // pokemon intrinsic stats
-pkmn.nickname = "";
-pkmn.species = "";
-pkmn.speciesNumber = "";
-pkmn.gender = "Male";
-pkmn.image = "";
+pkmn.nickname = "Arby";
+pkmn.species = "Arbok";
+pkmn.speciesNumber = "23";
+pkmn.gender = "Female";
+pkmn.image = "http://cdn.bulbagarden.net/upload/0/00/Spr_5b_024.png";
 
 // pokemon daily stats
 pkmn.party = true;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Shed Skin";
+pkmn.abilityDesc = "Every turn, it has a 1 in 3 chance of healing from a status condition (BURN, PARALYZE, SLEEP, POISON, FREEZE).";
 
 // notes
-pkmn.notes = "";
+pkmn.notes = "Arby is Doodle‘s fourth snatched fighter, done by literally using his head.  Arby is violent and has a lust for hunting, strangling, and scaring.  She‘s offended whenever someone mistakes the face on her neck for her actual face.  She finds Doodle to be some sort of toy gone haywire, and is upset that he doesn‘t know she‘s female.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
 
+
 // -----------------------------------------------------------------------------
-//
-//                                 PkmnName
+// 
+//                                 YAM (Yamask)
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
 
 // pokemon intrinsic stats
-pkmn.nickname = "";
-pkmn.species = "";
-pkmn.speciesNumber = "";
+pkmn.nickname = "Yam";
+pkmn.species = "Yamask";
+pkmn.speciesNumber = "561";
 pkmn.gender = "Male";
-pkmn.image = "";
+pkmn.image = "http://cdn.bulbagarden.net/upload/d/d1/Spr_5b_562.png";
 
 // pokemon daily stats
 pkmn.party = true;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Mummy";
+pkmn.abilityDesc = "If you are touched by an opponent, you make their ability Mummy.";
 
 // notes
-pkmn.notes = "";
+pkmn.notes = "Yam is Doodle‘s tenth Pokémon, mercifully taken down by Mighty.  Yam is pretty shy and worries a lot about its friends‘ welfare.  It seems to entirely remember itself in life, but refuses to discuss it--this leads to only it knowing if it‘s a she, which everyone seems to assume.  It feels an odd sense of familiarity with Doodle, but tries to ignore it whenever near him.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
 
+
 // -----------------------------------------------------------------------------
-//
-//                                 PkmnName
+// 
+//                                 ONE (Onix)
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
 
 // pokemon intrinsic stats
-pkmn.nickname = "";
-pkmn.species = "";
-pkmn.speciesNumber = "";
+pkmn.nickname = "One";
+pkmn.species = "Onix";
+pkmn.speciesNumber = "94";
 pkmn.gender = "Male";
-pkmn.image = "";
+pkmn.image = "http://cdn.bulbagarden.net/upload/4/4c/Spr_4d_095.png";
 
 // pokemon daily stats
 pkmn.party = true;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Sturdy";
+pkmn.abilityDesc = "The Pokémon is unaffected by One Hit Knock Out moves and in Generation V, the Pokémon cannot be knocked out when it has full Hit Points";
 
 // notes
-pkmn.notes = "";
+pkmn.notes = "Onix is Doodle‘s eighth Pokémon, done through battle with Craggly.  Onix is pretty stupid and cocky, but honest and determined.  He once thought he was a shark because of the spike on his head, but now thinks he‘s some sort of hybrid of multiple creatures.  He can relate to Doodle‘s inner desperation to get smarter and better, but would enjoy smashing him to death.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
 
+
 // -----------------------------------------------------------------------------
-//
-//                                 PkmnName
+// 
+//                                 MOLGA (Emolga)
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
 
 // pokemon intrinsic stats
-pkmn.nickname = "";
-pkmn.species = "";
-pkmn.speciesNumber = "";
+pkmn.nickname = "Molga";
+pkmn.species = "Emolga";
+pkmn.speciesNumber = "586";
 pkmn.gender = "Male";
-pkmn.image = "";
+pkmn.image = "http://cdn.bulbagarden.net/upload/a/a2/Spr_5b_587.png";
 
 // pokemon daily stats
 pkmn.party = false;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Static";
+pkmn.abilityDesc = "The opponent has a 30% chance of being induced with PARALYZE when using an attack, that requires physical contact, against this Pokémon.";
 
 // notes
-pkmn.notes = "";
+pkmn.notes = "Molga is Doodle‘s second catch, the first done without any Pokémon.  Molga is a cheery and easygoing flare of sunshine, and has a constant need to have fun.  He often forgets his tail exists and mistakes it for an enemy.  He doesn‘t seem to mind Doodle much, and is normally glad to fly around his shoulders.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
 
+
 // -----------------------------------------------------------------------------
-//
-//                                 PkmnName
+// 
+//                                 KOFF (Koffing)
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
 
 // pokemon intrinsic stats
-pkmn.nickname = "";
-pkmn.species = "";
-pkmn.speciesNumber = "";
+pkmn.nickname = "Koff";
+pkmn.species = "Koffing";
+pkmn.speciesNumber = "108";
 pkmn.gender = "Male";
-pkmn.image = "";
+pkmn.image = "http://cdn.bulbagarden.net/upload/b/ba/Spr_5b_109.png";
 
 // pokemon daily stats
 pkmn.party = false;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Levitate";
+pkmn.abilityDesc = "Damage dealing Ground-type moves have no effect on this Pokémon. Cannot be trapped by Arena Trap ability. Takes no damage from Spikes.";
 
 // notes
-pkmn.notes = "";
+pkmn.notes = "Koff is Doodle‘s fifth catch, revenge for when Wes locked away his stuff including the Weezing he saved at Seabrush.  Koff doesn‘t appear to be able to speak, but from the way he poots out smoke, one can tell that he‘s concerned about how others view him and envies their looks.  He doesn‘t envy Doodle, though--his hoody and hair make him look ugly.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
 
+
 // -----------------------------------------------------------------------------
-//
-//                                 PkmnName
+// 
+//                                 DUSK (Duskull)
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
 
 // pokemon intrinsic stats
-pkmn.nickname = "";
-pkmn.species = "";
-pkmn.speciesNumber = "";
+pkmn.nickname = "Dusk";
+pkmn.species = "Duskull";
+pkmn.speciesNumber = "354";
 pkmn.gender = "Male";
-pkmn.image = "";
+pkmn.image = "http://cdn.bulbagarden.net/upload/7/7f/Spr_4d_355.png";
 
 // pokemon daily stats
 pkmn.party = false;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Levitate";
+pkmn.abilityDesc = "Damage dealing Ground-type moves have no effect on this Pokémon. Cannot be trapped by Arena Trap ability. Takes no damage from Spikes.";
 
 // notes
-pkmn.notes = "";
+pkmn.notes = "Dusk is Doodle‘s sixth lured ally, done by a mix of Pokémon battling and use of his own skills.  Dusk enjoys the basics of his kind--crying of children--but has also had an interest in taking up knitting, finding it funny that sharp tools can be used creatively.  Immediately after seeing Doodle, Dusk seemed to have understood him and now shows affection toward him.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
 
+
 // -----------------------------------------------------------------------------
-//
-//                                 PkmnName
+// 
+//                                 SHU (Shuppet)
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
 
 // pokemon intrinsic stats
-pkmn.nickname = "";
-pkmn.species = "";
-pkmn.speciesNumber = "";
+pkmn.nickname = "Shu";
+pkmn.species = "Shuppet";
+pkmn.speciesNumber = "352";
 pkmn.gender = "Male";
-pkmn.image = "";
+pkmn.image = "http://cdn.bulbagarden.net/upload/4/43/Spr_5b_353.png";
 
 // pokemon daily stats
 pkmn.party = false;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Insomnia";
+pkmn.abilityDesc = "The Pokémon cannot be under the SLEEP condition while having this ability.";
 
 // notes
-pkmn.notes = "";
+pkmn.notes = "Shu is Doodle‘s ninth captured pet, hastily fought by Mighty.  Shu has a rather soul-searchy personality, and speaks by blowing wind from beneath her cloak.  Shu once went an entire week without scaring anyone--it was the worst time of her life.  She finds Doodle‘s presence to be filled with vengeance and anger, and so she feeds off of it whenever possible.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
 
+
 // -----------------------------------------------------------------------------
-//
+// 
 //                                 LITE (Litwick)
 //
 // -----------------------------------------------------------------------------
@@ -341,7 +351,7 @@ var pkmn = new Pokemon();
 // pokemon intrinsic stats
 pkmn.nickname = "Lite";
 pkmn.species = "Litwick";
-pkmn.speciesNumber = "607";
+pkmn.speciesNumber = "606";
 pkmn.gender = "Male";
 pkmn.image = "http://cdn.bulbagarden.net/upload/5/50/Spr_5b_607.png";
 
@@ -350,11 +360,12 @@ pkmn.party = false;
 pkmn.level = 31;
 
 // pokemon ability
-pkmn.abilityName = "Undefined";
-pkmn.abilityDesc = "";
+pkmn.abilityName = "Flame Body";
+pkmn.abilityDesc = "The opponent has a 30% chance of being induced with BURN when using an attack, that requires physical contact, against this Pokémon.";
 
 // notes
-pkmn.notes = "Lite is Doodle‘s seventh caught Pokémon with Craggly, one of the few done through battling. Lite is mysterious and curious, and has an obsession with the mind. It doesn‘t much care for the world other than the things living in it, and is infatuated with nature. It thinks Doodle‘s soul is rich with emotion and nutrition.";
+pkmn.notes = "Lite is Doodle‘s seventh caught Pokémon with Craggly, one of the few done through battling.  Lite is mysterious and curious, and has an obsession with the mind.  It doesn‘t much care for the world other than the things living in it, and is infatuated with nature.  It thinks Doodle‘s soul is rich with emotion and nutrition.";
 
 // add the pokemon to the current trainer's pokemon list
 TrainerList[currentTrainer].pokemon.push (pkmn);
+
