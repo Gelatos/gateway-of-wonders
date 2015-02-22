@@ -233,7 +233,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
                 trainerOutput += "</div>";
 
                 // return the new output
-                return characterButtons + "<hr />" + trainerOutput;
+                return characterButtons + trainerOutput;
             });
         }
         
@@ -622,7 +622,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
                 trainerOutput += "</div>";
                 
                 // return the new output
-                return characterButtons + "<hr />" + trainerOutput;
+                return characterButtons + trainerOutput;
             });
         }
     }
