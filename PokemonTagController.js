@@ -176,7 +176,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
                     }
 
                     // return the new output
-                    return characterButtons + "<br />" + trainerOutput;
+                    return characterButtons + "<br /><div id='" + pokemonFormatterID + "'>" + trainerOutput + "</div>;
                 }
             );
         }
