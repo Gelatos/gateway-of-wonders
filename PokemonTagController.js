@@ -8,17 +8,8 @@ pokemonTopicIDs.push("2695"); // Plot Synopsis
 pokemonTopicIDs.push("2747"); // symphony of roses
 pokemonTopicIDs.push("2966"); // chapter 4
 
-// ================================================================================
-// --------------------------------------------------------------------------------
-// TAGS SCRIPTS
-// --------------------------------------------------------------------------------
-// ================================================================================
+
 (function () {
-    var postText = document.getElementsByClassName('postcolor');
-    var incrementer = -1;
-    var randomIncrementer = 0;
-    var previousIncrementerNumber = 0;
-    var battleBGIDs = [];
 
     // determine if this is a pokemon topic
     var pokemonTopic = false;
@@ -29,7 +20,20 @@ pokemonTopicIDs.push("2966"); // chapter 4
             break;
         }
     }
-
+    
+// ================================================================================
+// --------------------------------------------------------------------------------
+// POSTCOLOR TAGS
+// --------------------------------------------------------------------------------
+// ================================================================================
+    
+    // initialize variables
+    var postText = document.getElementsByClassName('postcolor');
+    var incrementer = -1;
+    var randomIncrementer = 0;
+    var previousIncrementerNumber = 0;
+    var battleBGIDs = [];
+    
     while (incrementer < postText.length) {
         incrementer++;
         
@@ -209,7 +213,13 @@ pokemonTopicIDs.push("2966"); // chapter 4
 
                 // create the character Button
                 var image = trainerInfoSplit[1];
+                if (image.indexOf ("http") == -1) {
+                    var image = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprites/" + trainerInfoSplit[1];
+                }
                 var imageOnClick = trainerInfoSplit[2];
+                if (imageOnClick.indexOf ("http") == -1) {
+                    var imageOnClick = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprites/" + trainerInfoSplit[2];
+                }
 
                 characterButtons += "<img onclick=\"show_spoil(this, event)\" ";
                 characterButtons += "src='" + image + "' ";
@@ -556,6 +566,78 @@ pokemonTopicIDs.push("2966"); // chapter 4
         }
         
     }
+
+// ================================================================================
+// --------------------------------------------------------------------------------
+// SIGNATURE TAGS
+// --------------------------------------------------------------------------------
+// ================================================================================
+    postText = document.getElementsByClassName('signature');
+    incrementer = -1;
+
+    while (incrementer < postText.length) {
+        // ================================================================================
+        // CREATE POKEMON TRAINER SINGLE LOGS
+        // ================================================================================
+        if (pokemonTopic &&
+            postText[incrementer].innerHTML.indexOf("[trainer") !== -1) {
+
+            // Find the string that is within either the pokemonFormatter tags.
+            postText[incrementer].innerHTML = 
+                postText[incrementer].innerHTML.replace(/\[trainer(?:=(.+?))?\]/gi, function (count, trainerInfo) {
+                
+                //                                                          Create IDs
+                // -------------------------------------------------------------------
+                var pokemonFormatterClass = "SingleTrainerLog" + Math.floor(Math.random () * 10000000);
+                var characterButtons = "";
+                var trainerOutput = "";
+                
+                // prune the trainer info
+                trainerInfo = trainerInfo.replace(/\r?\n|\r/, "");
+                trainerInfo = trainerInfo.replace(/<br\s*[\/]?>/gi, "");
+                trainerInfo = replaceSpecialCharacters(trainerInfo);
+                trainerInfo = trainerInfo.replace(/\s/g, '')
+
+                // Split the dictionary
+                var trainerInfoSplit = trainerInfo.split(",");
+                var characterID = trainerInfoSplit[0] + "Trainer" + Math.floor(Math.random () * 100000);
+
+                // create the character Button
+                var image = trainerInfoSplit[1];
+                if (image.indexOf ("http") == -1) {
+                    var image = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprites/" + trainerInfoSplit[1];
+                }
+                var imageOnClick = trainerInfoSplit[2];
+                if (imageOnClick.indexOf ("http") == -1) {
+                    var imageOnClick = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprites/" + trainerInfoSplit[2];
+                }
+
+                characterButtons += "<img onclick=\"show_spoil(this, event)\" ";
+                characterButtons += "src='" + image + "' ";
+                characterButtons += "onmouseover=\"this.src='" + imageOnClick + "'\" ";
+                characterButtons += "onmouseout=\"this.src='" + image + "'\" />";
+
+                // create the header
+                trainerOutput += "<div id='" + characterID + "' class='" + pokemonFormatterClass + "' ";
+                trainerOutput += "style='display:none;'>";
+                trainerOutput += CreateTrainerCard (TrainerList[trainerInfoSplit[0]]);
+                trainerOutput += "</div>";
+
+                return "";
+
+                // return the new output
+                return characterButtons + "<hr />" + trainerOutput;
+            });
+        }
+    }
+    
+
+    
+// ================================================================================
+// --------------------------------------------------------------------------------
+// CLEAN UP
+// --------------------------------------------------------------------------------
+// ================================================================================
     
     // set the bg image
     var bgImage = new Image();
