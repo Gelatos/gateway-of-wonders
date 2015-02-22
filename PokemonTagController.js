@@ -232,8 +232,6 @@ pokemonTopicIDs.push("2966"); // chapter 4
                 trainerOutput += CreateTrainerCard (TrainerList[trainerInfoSplit[0]]);
                 trainerOutput += "</div>";
 
-                return "";
-
                 // return the new output
                 return characterButtons + "<hr />" + trainerOutput;
             });
@@ -622,9 +620,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
                 trainerOutput += "style='display:none;'>";
                 trainerOutput += CreateTrainerCard (TrainerList[trainerInfoSplit[0]]);
                 trainerOutput += "</div>";
-
-                return "";
-
+                
                 // return the new output
                 return characterButtons + "<hr />" + trainerOutput;
             });
