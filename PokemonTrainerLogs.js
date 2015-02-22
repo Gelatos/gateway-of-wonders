@@ -286,6 +286,10 @@ function setPokemonStats(pokemonName) {
         }
     }
     
+    if (pokemonStats[1] == undefined) {
+        return output;
+    }
+    
     output += "<b style=\\\"font-size: 16px\\\">" + pokemonStats[1] + "</b><br />";
     output += "<img src=\\\"" + parseType (pokemonStats[8]) + "\\\" />";
     if (pokemonStats[9] != "") {
