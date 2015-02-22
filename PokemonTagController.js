@@ -193,8 +193,6 @@ pokemonTopicIDs.push("2966"); // chapter 4
                 
                 //                                                          Create IDs
                 // -------------------------------------------------------------------
-                var firstVisibleCharacter = true;
-                var pokemonFormatterID = "SingleTrainerLog" + Math.floor(Math.random () * 10000000);
                 var pokemonFormatterClass = "SingleTrainerLog" + Math.floor(Math.random () * 10000000);
                 var characterButtons = "";
                 var trainerOutput = "";
@@ -220,12 +218,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
 
                 // create the header
                 trainerOutput += "<div id='" + characterID + "' class='" + pokemonFormatterClass + "' ";
-                    if (firstVisibleCharacter == true) {
-                        firstVisibleCharacter = false;
-                        trainerOutput += "style='display:block;'>";
-                    } else {
-                        trainerOutput += "style='display:none;'>";
-                    }
+                trainerOutput += "style='display:none;'>";
                 trainerOutput += CreateTrainerCard (TrainerList[trainerInfoSplit[0]]);
                 trainerOutput += "</div>";
 
