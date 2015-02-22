@@ -180,6 +180,61 @@ pokemonTopicIDs.push("2966"); // chapter 4
                 }
             );
         }
+
+        // ================================================================================
+        // CREATE POKEMON TRAINER SINGLE LOGS
+        // ================================================================================
+        if (pokemonTopic &&
+            postText[incrementer].innerHTML.indexOf("[trainer") !== -1) {
+
+            // Find the string that is within either the pokemonFormatter tags.
+            postText[incrementer].innerHTML = 
+                postText[incrementer].innerHTML.replace(/\[trainer(?:=(.+?))?\]/gi, function (count, trainerInfo) {
+                
+                //                                                          Create IDs
+                // -------------------------------------------------------------------
+                var firstVisibleCharacter = true;
+                var pokemonFormatterID = "SingleTrainerLog" + Math.floor(Math.random () * 10000000);
+                var pokemonFormatterClass = "SingleTrainerLog" + Math.floor(Math.random () * 10000000);
+                var characterButtons = "";
+                var trainerOutput = "";
+                
+                // prune the trainer info
+                trainerInfo = trainerInfo.replace(/\r?\n|\r/, "");
+                trainerInfo = trainerInfo.replace(/<br\s*[\/]?>/gi, "");
+                trainerInfo = replaceSpecialCharacters(trainerInfo);
+                trainerInfo = trainerInfo.replace(/\s/g, '')
+
+                // Split the dictionary
+                var trainerInfoSplit = trainerInfo.split(",");
+                var characterID = trainerInfoSplit[0] + "Trainer" + Math.floor(Math.random () * 100000);
+
+                // create the character Button
+                var image = trainerInfoSplit[1];
+                var imageOnClick = trainerInfoSplit[2];
+
+                characterButtons += "<img onclick=\"show_spoil(this, event)\" ";
+                characterButtons += "src='" + image + "' ";
+                characterButtons += "onmouseover=\"this.src='" + imageOnClick + "'\" ";
+                characterButtons += "onmouseout=\"this.src='" + image + "'\" />";
+
+                // create the header
+                trainerOutput += "<div id='" + characterID + "' class='" + pokemonFormatterClass + "' ";
+                    if (firstVisibleCharacter == true) {
+                        firstVisibleCharacter = false;
+                        trainerOutput += "style='display:block;'>";
+                    } else {
+                        trainerOutput += "style='display:none;'>";
+                    }
+                trainerOutput += CreateTrainerCard (TrainerList[trainerInfoSplit[0]]);
+                trainerOutput += "</div>";
+
+                return "";
+
+                // return the new output
+                return characterButtons + "<hr />" + trainerOutput;
+            });
+        }
         
         // ================================================================================
         // Show All Facesets
