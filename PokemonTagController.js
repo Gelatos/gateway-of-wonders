@@ -161,12 +161,12 @@ pokemonTopicIDs.push("2966"); // chapter 4
 
                                 // create the header
                                 trainerOutput += "<div id='" + characterID + "' class='" + pokemonFormatterClass + "' ";
-//                                    if (firstVisibleCharacter == true && trainerInfoSplit[3] == "show") {
-//                                        firstVisibleCharacter = false;
+                                    if (firstVisibleCharacter == true && trainerInfoSplit[3] == "show") {
+                                        firstVisibleCharacter = false;
                                     trainerOutput += "style='display:block;'>";
-//                                    } else {
-//                                        trainerInfo += "style='display:none;'>";
-//                                    }
+                                    } else {
+                                        trainerInfo += "style='display:none;'>";
+                                    }
                                 trainerOutput += CreateTrainerCard (TrainerList[trainerInfoSplit[0]]);
                                 trainerOutput += "</div>";
 
