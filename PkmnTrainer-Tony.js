@@ -1016,7 +1016,7 @@ pkmn.gender = "Male";
 pkmn.image = "http://play.pokemonshowdown.com/sprites/bw/froakie.png";
 
 // pokemon daily stats
-pkmn.party = false;
+pkmn.party = true;
 pkmn.level = 15;
 
 // pokemon ability
