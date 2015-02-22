@@ -34,6 +34,30 @@ pokemonTopicIDs.push("2966"); // chapter 4
         incrementer++;
         
         // ================================================================================
+        // FACE SET
+        // ================================================================================
+        if (postText[incrementer].innerHTML.indexOf('[e') !== -1) {
+            // Find the string that is within either the pokemon tags.
+            postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
+                /\[(emote|e)(?:=(.+?))?\]([\s\S]+?)\[\/(emote|e)\]/gi, function (total, t, title, inner) {
+                    
+                    // replace the emotes
+                    if (title.search (",") >= 0) {
+                        var split = title.split (",");
+                        inner = replaceEmotes(split[0], split[1], inner);
+                    } else {
+                        inner = replaceEmotes(title, "", inner);
+                    }
+                    
+                    // replace speech bubbles
+                    inner = addSpeechBubbles (inner);
+
+                    // return the finished table
+                    return "<table>" + inner + "</td></tr></table>";
+                });
+        }
+        
+        // ================================================================================
         // Display pokemon
         // ================================================================================
         if (pokemonTopic &&
@@ -158,31 +182,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         }
         
         // ================================================================================
-        // FACE SET
-        // ================================================================================
-        if (postText[incrementer].innerHTML.indexOf('[e') !== -1) {
-            // Find the string that is within either the pokemon tags.
-            postText[incrementer].innerHTML = postText[incrementer].innerHTML.replace(
-                /\[(emote|e)(?:=(.+?))?\]([\s\S]+?)\[\/(emote|e)\]/gi, function (total, t, title, inner) {
-                    
-                    // replace the emotes
-                    if (title.search (",") >= 0) {
-                        var split = title.split (",");
-                        inner = replaceEmotes(split[0], split[1], inner);
-                    } else {
-                        inner = replaceEmotes(title, "", inner);
-                    }
-                    
-                    // replace speech bubbles
-                    inner = addSpeechBubbles (inner);
-
-                    // return the finished table
-                    return "<table>" + inner + "</td></tr></table>";
-                });
-        }
-        
-        // ================================================================================
-        // Show All Image
+        // Show All Facesets
         // ================================================================================
         if (postText[incrementer].innerHTML.indexOf('[showAll') !== -1) {
             // Find the string that is within either the pokemon tags.
@@ -205,7 +205,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         }
         
         // ================================================================================
-        // Show Everything Image
+        // Show Everything Faceset
         // ================================================================================
         if (postText[incrementer].innerHTML.indexOf('[showEverything') !== -1) {
             // Find the string that is within either the pokemon tags.
