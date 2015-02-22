@@ -295,7 +295,7 @@ function setPokemonStats(pokemonName) {
     
     output += "<table><tr><td rowspan=\\\"3\\\"><a href=\\\"http://www.serebii.net/pokedex-xy/";
     output += padZeros(pokemonStats[0], 3) + ".shtml\\\"><img src=\\\"";
-    output += "http://play.pokemonshowdown.com/sprites/bw/" + pokemonStats[1].toLowerCase() + ".png\\\" /></a></td>";
+    output += "http://play.pokemonshowdown.com/sprites/bw/" + pokemonStats[1] + ".png\\\" /></a></td>";
     output += "<td colspan=\\\"3\\\"><b style=\\\"font-size: 14px\\\">Stats</b></td></tr><tr>";
     
     // check HP stat
