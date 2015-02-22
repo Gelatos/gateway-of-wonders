@@ -698,7 +698,7 @@ function CreatePokemonCard (pkmn) {
 // ================================================================================
 // Create Trainer Card
 // ================================================================================
-function CreateTrainerCard (trainer) {
+function CreateTrainerCard (trainer, titleContent) {
     var output = "";
     
     //                                              Trainer Pokemon Arrays
@@ -784,6 +784,9 @@ function CreateTrainerCard (trainer) {
     // -------------------------------------------------------------------
     
     output += "<b style='font-size:20px'>" + trainer.name + "</b>";
+    if (titleContent != "" && titleContent != undefined && titleContent != null) {
+        output += "<div>" + titleContent + "</div>";
+    }
     output += "<table><tr><td width='60px' style='height: 150px; vertical-align: bottom;'>";
     output += "<img src='" + trainer.emote + "'></td>";
 
