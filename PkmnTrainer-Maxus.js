@@ -1,5 +1,5 @@
 //================================================================================
-//                              TRAINER: MAXUS
+//                              TRAINER: Maxus
 //================================================================================
 
 // Create the trainer and add them to the Trainer List
@@ -7,7 +7,7 @@ var currentTrainer = "Maxus";
 TrainerList[currentTrainer] = new Trainer ();
 
 // Name
-TrainerList[currentTrainer].name = "Maxus";
+TrainerList[currentTrainer].name = currentTrainer;
 TrainerList[currentTrainer].fullName = "Maxus";
 
 // pokedollars
@@ -18,13 +18,13 @@ TrainerList[currentTrainer].images.push ("http://i231.photobucket.com/albums/ee2
 
 // profile stats
 TrainerList[currentTrainer].emote = getEmoteSet (currentTrainer).getEmote("Serious", "");
-TrainerList[currentTrainer].quote = "I'd really hate to have anyone disappointed with my services. You understand, right?";
+TrainerList[currentTrainer].quote = "I would really hate to have anyone disappointed with my services. You understand, right?";
 TrainerList[currentTrainer].age = "??";
-TrainerList[currentTrainer].gender = "??";
-TrainerList[currentTrainer].personality = "Stoic";
+TrainerList[currentTrainer].gender = "Male";
+TrainerList[currentTrainer].personality = "Stoic.";
 TrainerList[currentTrainer].preferredPokemon = "??";
 TrainerList[currentTrainer].dislikedPokemon = "??";
-TrainerList[currentTrainer].skills = "Bodyguard";
+TrainerList[currentTrainer].skills = "Bodyguard.";
 
 // ========================================================
 //                   TRAINER ITEMS
@@ -37,8 +37,8 @@ TrainerList[currentTrainer].skills = "Bodyguard";
 // ========================================================
 
 // -----------------------------------------------------------------------------
-// 
-//                                 MISSINGNO
+//
+//                                 PkmnName
 //
 // -----------------------------------------------------------------------------
 var pkmn = new Pokemon();
