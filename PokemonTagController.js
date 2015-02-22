@@ -33,7 +33,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
     var previousIncrementerNumber = 0;
     var battleBGIDs = [];
     
-    for (var incrementer = 0; incrementer < postText; incrementer++) {
+    for (var incrementer = 0; incrementer < postText.length; incrementer++) {
         
         // ================================================================================
         // FACE SET
@@ -569,7 +569,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
 // ================================================================================
     postText = document.getElementsByClassName('signature');
 
-    for (var incrementer = 0; incrementer < postText; incrementer++) {
+    for (var incrementer = 0; incrementer < postText.length; incrementer++) {
         // ================================================================================
         // CREATE POKEMON TRAINER SINGLE LOGS
         // ================================================================================
