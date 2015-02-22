@@ -188,8 +188,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // CREATE POKEMON TRAINER SINGLE LOGS
         // ================================================================================
-        if (pokemonTopic &&
-            postText[incrementer].innerHTML.indexOf("[trainer") !== -1) {
+        if (postText[incrementer].innerHTML.indexOf("[trainer") !== -1) {
 
             // Find the string that is within either the pokemonFormatter tags.
             postText[incrementer].innerHTML = 
@@ -577,8 +576,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
         // ================================================================================
         // CREATE POKEMON TRAINER SINGLE LOGS
         // ================================================================================
-        if (pokemonTopic &&
-            postText[incrementer].innerHTML.indexOf("[trainer") !== -1) {
+        if (postText[incrementer].innerHTML.indexOf("[trainer") !== -1) {
 
             // Find the string that is within either the pokemonFormatter tags.
             postText[incrementer].innerHTML = 
