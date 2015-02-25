@@ -138,6 +138,9 @@ var catPhysical = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprite
 var catSpecial = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprites/special.png";
 var catOther = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprites/other.png";
 
+var groupBasic = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprites/typeBasic.png";
+var groupSuper = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprites/typeSuper.png";
+
 function parseType (name) {
     if (name == "Normal") {
         return typeNormal;
