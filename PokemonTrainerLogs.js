@@ -228,6 +228,7 @@ function Pokemon () {
 function PokemonMove () {
     this.simple = false;
     this.name = "";
+    this.group = "";
     this.type = typeNormal;
     this.category = catPhysical;
     this.power = "";
@@ -665,7 +666,11 @@ function CreatePokemonCard (pkmn) {
                     output += " onmouseover='showToolTip(\"" + attackDescription + "\");\'";
                     output += "onmouseout=\"hideToolTip()\" onclick=\"removeToolTip();\" >";
                     output += "<img src='";
-                    output += pkmn.uniqueMoves[j].type;
+                    if (pkmn.uniqueMoves[j].group == "") {
+                        output += pkmn.uniqueMoves[j].type;
+                    } else {
+                        output += pkmn.uniqueMoves[j].group;
+                    }
                     output += "' style=' margin-left: auto; margin-right: auto;' > ";
                     output += pkmn.uniqueMoves[j].name;
                     output += "</span>"
