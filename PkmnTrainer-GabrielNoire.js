@@ -186,7 +186,7 @@ pkmn.uniqueMoves.push (move);
 var move = new PokemonMove ();
 move.name = "Feather Spray";
 move.group = groupBasic;
-move.type = typeNormal;
+move.type = typeFlying;
 move.category = catSpecial;
 move.power = "30";
 move.accuracy = "100%";
