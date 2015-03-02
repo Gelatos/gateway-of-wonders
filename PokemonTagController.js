@@ -607,16 +607,16 @@ pokemonTopicIDs.push("2966"); // chapter 4
                     var imageOnClick = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprites/" + trainerInfoSplit[2];
                 }
                 
-                characterButtons += "<img style='cursor: pointer;' ";
-                characterButtons += "onmouseover=\'showToolTip(this.nextSibling.innerHTML";
-                characterButtons += ", true); \' ";
-                characterButtons += "onmouseout=\"hideToolTip();\" onclick=\"removeToolTip();\"";
-                characterButtons += "src='" + image + "' />";
+//                characterButtons += "<img style='cursor: pointer;' ";
+//                characterButtons += "onmouseover=\'showToolTip(this.nextSibling.innerHTML";
+//                characterButtons += ", true); \' ";
+//                characterButtons += "onmouseout=\"hideToolTip();\" onclick=\"removeToolTip();\"";
+//                characterButtons += "src='" + image + "' />";
 
-//                characterButtons += "<img onclick=\"show_spoil(this, event)\" ";
-//                characterButtons += "src='" + image + "' ";
-//                characterButtons += "onmouseover=\"this.src='" + imageOnClick + "'\" ";
-//                characterButtons += "onmouseout=\"this.src='" + image + "'\" />";
+                characterButtons += "<img onclick=\"show_spoil(this, event)\" ";
+                characterButtons += "src='" + image + "' ";
+                characterButtons += "onmouseover=\"this.src='" + imageOnClick + "'\" ";
+                characterButtons += "onmouseout=\"this.src='" + image + "'\" />";
 
                 // create the header
                 trainerOutput += "<div id='" + characterID + "' class='" + pokemonFormatterClass + "' ";
