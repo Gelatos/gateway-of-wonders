@@ -58,6 +58,20 @@ pkmn.level = 35;
 pkmn.abilityName = "Impulse Cannon";
 pkmn.abilityDesc = "Cannon attacks can punch through walls with ease.";
 
+// Basic - Basic Attack
+// ---------------------------------
+var move = new PokemonMove ();
+move.name = "Basic Attack";
+move.group = groupBasic;
+move.type = typeNormal;
+move.category = catPhysical;
+move.power = "60";
+move.accuracy = "100%";
+move.target = "Single";
+move.effect = "";
+move.description = "Tackle, Scratch, Pound. Whatever you call it, this attack is entirely normal.";
+pkmn.uniqueMoves.push (move);
+
 // Basic - Aqua Shot
 // ---------------------------------
 var move = new PokemonMove ();
@@ -166,6 +180,20 @@ pkmn.level = 35;
 // pokemon ability
 pkmn.abilityName = "Fast Foot";
 pkmn.abilityDesc = "Can be ridden and runs at high speeds. Capable of leaping over or around most obstacles. Great for pursuing a fleeing target.";
+
+// Basic - Basic Attack
+// ---------------------------------
+var move = new PokemonMove ();
+move.name = "Basic Attack";
+move.group = groupBasic;
+move.type = typeNormal;
+move.category = catPhysical;
+move.power = "60";
+move.accuracy = "100%";
+move.target = "Single";
+move.effect = "";
+move.description = "Tackle, Scratch, Pound. Whatever you call it, this attack is entirely normal.";
+pkmn.uniqueMoves.push (move);
 
 // Basic - Tailwind
 // ---------------------------------
@@ -276,6 +304,20 @@ pkmn.level = 35;
 pkmn.abilityName = "Tiny";
 pkmn.abilityDesc = "Small enough to hide on its trainer&lsquo;s person without being noticed, specifically in his hair.";
 
+// Basic - Basic Attack
+// ---------------------------------
+var move = new PokemonMove ();
+move.name = "Basic Attack";
+move.group = groupBasic;
+move.type = typeNormal;
+move.category = catPhysical;
+move.power = "60";
+move.accuracy = "100%";
+move.target = "Single";
+move.effect = "";
+move.description = "Tackle, Scratch, Pound. Whatever you call it, this attack is entirely normal.";
+pkmn.uniqueMoves.push (move);
+
 // Basic - Shock
 // ---------------------------------
 var move = new PokemonMove ();
@@ -384,6 +426,20 @@ pkmn.level = 35;
 // pokemon ability
 pkmn.abilityName = "Sturdy";
 pkmn.abilityDesc = "With its powerful headbutts and protective afro, it is capable of stopping any moving object in its tracks, provided it is able to get in front of said object.";
+
+// Basic - Basic Attack
+// ---------------------------------
+var move = new PokemonMove ();
+move.name = "Basic Attack";
+move.group = groupBasic;
+move.type = typeNormal;
+move.category = catPhysical;
+move.power = "60";
+move.accuracy = "100%";
+move.target = "Single";
+move.effect = "";
+move.description = "Tackle, Scratch, Pound. Whatever you call it, this attack is entirely normal.";
+pkmn.uniqueMoves.push (move);
 
 // Basic - Right Horn
 // ---------------------------------
