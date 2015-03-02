@@ -202,7 +202,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
                 trainerInfo = trainerInfo.replace(/\r?\n|\r/, "");
                 trainerInfo = trainerInfo.replace(/<br\s*[\/]?>/gi, "");
                 trainerInfo = replaceSpecialCharacters(trainerInfo);
-                trainerInfo = trainerInfo.replace(/\s/g, '')
+                trainerInfo = trainerInfo.replace(/\s/g, '');
 
                 // Split the dictionary
                 var trainerInfoSplit = trainerInfo.split(",");
@@ -562,11 +562,13 @@ pokemonTopicIDs.push("2966"); // chapter 4
         
     }
 
-// ================================================================================
-// --------------------------------------------------------------------------------
-// SIGNATURE TAGS
-// --------------------------------------------------------------------------------
-// ================================================================================
+// ====================================================================================================================================
+// ------------------------------------------------------------------------------------------------------------------------------------
+//    
+//                                                                          SIGNATURE TAGS
+//    
+// ------------------------------------------------------------------------------------------------------------------------------------
+// ====================================================================================================================================
     postText = document.getElementsByClassName('signature');
 
     for (var incrementer = 0; incrementer < postText.length; incrementer++) {
@@ -589,7 +591,7 @@ pokemonTopicIDs.push("2966"); // chapter 4
                 trainerInfo = trainerInfo.replace(/\r?\n|\r/, "");
                 trainerInfo = trainerInfo.replace(/<br\s*[\/]?>/gi, "");
                 trainerInfo = replaceSpecialCharacters(trainerInfo);
-                trainerInfo = trainerInfo.replace(/\s/g, '')
+                trainerInfo = trainerInfo.replace(/\s/g, '');
 
                 // Split the dictionary
                 var trainerInfoSplit = trainerInfo.split(",");
@@ -604,11 +606,17 @@ pokemonTopicIDs.push("2966"); // chapter 4
                 if (imageOnClick.indexOf ("http") == -1) {
                     var imageOnClick = "http://i231.photobucket.com/albums/ee290/Gelatos/DnD%20sprites/" + trainerInfoSplit[2];
                 }
+                
+                characterButtons += "<img style='cursor: pointer;' ";
+                characterButtons += "onmouseover=\'showToolTip(this.nextSibling.innerHTML";
+                characterButtons += ", true); this.src=\\\"" + imageOnClick + "\\\"\' ";
+                characterButtons += "onmouseout=\"hideToolTip(); this.src='" + image + "'\" onclick=\"removeToolTip();\"";
+                characterButtons += "src='" + image + "' />";
 
-                characterButtons += "<img onclick=\"show_spoil(this, event)\" ";
-                characterButtons += "src='" + image + "' ";
-                characterButtons += "onmouseover=\"this.src='" + imageOnClick + "'\" ";
-                characterButtons += "onmouseout=\"this.src='" + image + "'\" />";
+//                characterButtons += "<img onclick=\"show_spoil(this, event)\" ";
+//                characterButtons += "src='" + image + "' ";
+//                characterButtons += "onmouseover=\"this.src='" + imageOnClick + "'\" ";
+//                characterButtons += "onmouseout=\"this.src='" + image + "'\" />";
 
                 // create the header
                 trainerOutput += "<div id='" + characterID + "' class='" + pokemonFormatterClass + "' ";
@@ -621,14 +629,15 @@ pokemonTopicIDs.push("2966"); // chapter 4
             });
         }
     }
-    
 
     
-// ================================================================================
-// --------------------------------------------------------------------------------
-// CLEAN UP
-// --------------------------------------------------------------------------------
-// ================================================================================
+// ====================================================================================================================================
+// ------------------------------------------------------------------------------------------------------------------------------------
+//    
+//                                                                          CLEAN UP
+//    
+// ------------------------------------------------------------------------------------------------------------------------------------
+// ====================================================================================================================================
     
     // set the bg image
     var bgImage = new Image();
