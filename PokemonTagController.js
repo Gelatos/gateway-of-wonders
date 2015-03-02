@@ -609,8 +609,8 @@ pokemonTopicIDs.push("2966"); // chapter 4
                 
                 characterButtons += "<img style='cursor: pointer;' ";
                 characterButtons += "onmouseover=\'showToolTip(this.nextSibling.innerHTML";
-                characterButtons += ", true); this.src=\\\"" + imageOnClick + "\\\"\' ";
-                characterButtons += "onmouseout=\"hideToolTip(); this.src='" + image + "'\" onclick=\"removeToolTip();\"";
+                characterButtons += ", true); \' ";
+                characterButtons += "onmouseout=\"hideToolTip();\" onclick=\"removeToolTip();\"";
                 characterButtons += "src='" + image + "' />";
 
 //                characterButtons += "<img onclick=\"show_spoil(this, event)\" ";
