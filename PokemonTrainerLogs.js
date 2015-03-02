@@ -1,3 +1,15 @@
+// ================================================================================
+// Replace special characters
+// ================================================================================
+function replaceSpecialCharacters(str) {
+    if (str != "undefined" && str != "" && str != null) {
+        str = str.replace(/\'/gi, "&lsquo;");
+        str = str.replace(/\xE9/gi, "&eacute;");
+        str = str.replace(/\`/gi, "&lsquo;");
+    }
+    return str;
+};
+
 //================================================================================
 // ARRAY SEARCH
 //================================================================================
@@ -48,9 +60,14 @@ var toolTipText = "";
 // SHOW TOOL TIP:
 // Shows the tooltip box
 //=============================================================
-function showToolTip(str) {
+function showToolTip(str, big) {
     toolTipText = str;
     if (!preventTooltipHiding) {
+        if (big == false || big == undefined || big == "undefined" || big == null) {
+            document.getElementById('bubble_tooltip').style.width = "310px";
+        } else if (big == true) {
+            document.getElementById('bubble_tooltip').style.width = "600px";
+        }
         document.getElementById('bubble_tooltip').style.display = 'block';
         document.getElementById('bubble_tooltip_content').innerHTML = toolTipText;
     }
@@ -83,18 +100,6 @@ function removeToolTip() {
         }
     }
 }
-
-// ================================================================================
-// Replace special characters
-// ================================================================================
-function replaceSpecialCharacters(str) {
-    if (str != "undefined" && str != "" && str != null) {
-        str = str.replace(/\'/gi, "&lsquo;");
-        str = str.replace(/\xE9/gi, "&eacute;");
-        str = str.replace(/\`/gi, "&lsquo;");
-    }
-    return str;
-};
 
 function getUrlVars() {
     var vars = {};
