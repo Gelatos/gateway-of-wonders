@@ -471,7 +471,7 @@ pkmn.gender = "";
 pkmn.image = "http://puu.sh/fA7Hj/750eace52c.png";
 
 // pokemon daily stats
-pkmn.party = false;
+pkmn.party = true;
 pkmn.level = 32;
 
 // pokemon ability
